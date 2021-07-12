@@ -54,6 +54,7 @@ table {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 *, *::before, *::after {
@@ -67,6 +68,7 @@ html {
 
 body {
   background-color: #3a4a4f;
+  font-family: "Archivo", sans-serif;
 }
 
 h1 {
@@ -87,5 +89,151 @@ h4, h5, h6 {
 
 .text-align {
   text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: white;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5rem;
+  background-color: white;
+  border-top: 5px solid #0095be;
+  margin-bottom: 2rem;
+}
+
+.header li a {
+  color: #0095be;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+}
+
+.section-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (24.12rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 24.12rem);
+  grid-gap: 1.18rem;
+}
+
+.item {
+  border-top: 4px solid #0095be;
+  background-color: white;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item a {
+  color: red;
+  text-decoration: none;
+}
+
+.item h2 {
+  padding-bottom: 0.5rem;
+}
+
+.item p {
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.item1 p {
+  padding-bottom: 2rem;
+}
+
+.item2 {
+  grid-row: span 3;
+}
+
+.item2 p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.item4 {
+  grid-row: span 2;
+}
+
+.item3 {
+  padding: 0;
+}
+
+.item3 a {
+  display: block;
+  background-color: #fc2e1b;
+  color: white;
+  padding: 0.7rem;
+  margin-left: -0.5px;
+}
+
+.item5 {
+  padding: 0;
+}
+
+.item5 h2 {
+  background-color: #0095be;
+  padding: 0.5rem;
+  border: none;
+  margin-left: -0.5px;
+}
+
+.item3 p {
+  padding: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.item3 h2 {
+  padding: 0.5rem;
+}
+
+.item5 p {
+  padding: 0.5rem;
+}
+
+.item5 a {
+  padding: 0.5rem;
+}
+
+.item2 figure {
+  width: 250px;
+  height: 250px;
+  margin-left: 4rem;
+}
+
+.item2 figure img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.item4 {
+  height: 30vh;
+}
+
+.item4 img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.item4 a {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
