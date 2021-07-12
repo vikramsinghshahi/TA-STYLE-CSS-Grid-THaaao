@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #3a4a4f;
+  font-family: "Archivo", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4, h5, h6 {
+  font-size: 0.8rem;
+}
+
+.text-align {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: white;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5rem;
+  background-color: white;
+  border-top: 5px solid #0095be;
+  margin-bottom: 2rem;
+}
+
+.header li {
+  font-size: 1.8rem;
+}
+
+.header li a {
+  color: #0095be;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+}
+
+.section-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (24.12rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 24.12rem);
+  grid-gap: 1.18rem;
+}
+
+.item {
+  border-top: 4px solid #0095be;
+  background-color: white;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item a {
+  color: red;
+  text-decoration: none;
+}
+
+.item h2 {
+  padding-bottom: 0.5rem;
+}
+
+.item p {
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.item1 p {
+  padding-bottom: 2rem;
+}
+
+.item2 {
+  grid-row: span 3;
+}
+
+.item2 p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.item4 {
+  grid-row: span 2;
+}
+
+.item3 {
+  padding: 0;
+  height: 18vh;
+}
+
+.item3 a {
+  display: block;
+  background-color: #fc2e1b;
+  color: white;
+  padding: 0.7rem;
+}
+
+.item5 {
+  padding: 0;
+}
+
+.item5 h2 {
+  background-color: #0095be;
+  padding: 0.5rem;
+  border: none;
+  margin-left: -0.5px;
+}
+
+.item3 p {
+  padding: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.item3 h2 {
+  padding: 0.5rem;
+}
+
+.item5 p {
+  padding: 0.5rem;
+}
+
+.item5 a {
+  padding: 0.5rem;
+}
+
+.item2 figure {
+  width: 250px;
+  height: 250px;
+  margin-left: 4rem;
+}
+
+.item2 figure img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.item4 {
+  height: 30vh;
+}
+
+.item4 img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.item4 a {
+  display: block;
+}
+
+/* responsive designe for screen size 768px*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .section-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25rem)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 25rem);
+    grid-gap: 1.18rem;
+  }
+  .item2 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .item2 img {
+    margin-left: -1rem;
+  }
+  .item4 {
+    height: auto;
+  }
+  .item4 img {
+    margin-left: 7rem;
+  }
+  .item3 {
+    height: auto;
+  }
+}
+
+/* responsive designe for screen size 400px*/
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .header {
+    border-top: 2px solid #0095be;
+  }
+  .header li a {
+    font-size: 12px;
+  }
+  .section-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1.18rem;
+  }
+  .item {
+    border-top: 2px solid #0095be;
+  }
+  .item {
+    border-radius: 0;
+  }
+  .item3 {
+    height: auto;
+  }
+  .item3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item6 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
