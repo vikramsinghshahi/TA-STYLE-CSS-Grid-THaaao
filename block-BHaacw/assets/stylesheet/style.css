@@ -110,10 +110,13 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.header li {
+  font-size: 1.8rem;
+}
+
 .header li a {
   color: #0095be;
   text-decoration: none;
-  font-size: 1.8rem;
   font-family: "Archivo", sans-serif;
   font-weight: 600;
 }
@@ -235,5 +238,46 @@ h1 {
 
 .item4 a {
   display: block;
+}
+
+/* responsive designe for screen size 768px*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .section-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25rem)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 25rem);
+    grid-gap: 1.18rem;
+  }
+  .item2 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .item2 img {
+    margin-left: -1rem;
+  }
+  .item4 {
+    height: auto;
+  }
+  .item4 img {
+    margin-left: 7rem;
+  }
+}
+
+/* responsive designe for screen size 400px*/
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 320px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
