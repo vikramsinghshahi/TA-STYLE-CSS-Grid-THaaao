@@ -171,6 +171,7 @@ h1 {
 
 .item3 {
   padding: 0;
+  height: 18vh;
 }
 
 .item3 a {
@@ -178,7 +179,6 @@ h1 {
   background-color: #fc2e1b;
   color: white;
   padding: 0.7rem;
-  margin-left: -0.5px;
 }
 
 .item5 {
@@ -269,15 +269,60 @@ h1 {
   .item4 img {
     margin-left: 7rem;
   }
+  .item3 {
+    height: auto;
+  }
 }
 
 /* responsive designe for screen size 400px*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   html {
     font-size: 10px;
   }
   .container {
     max-width: 320px;
+  }
+  .header {
+    border-top: 2px solid #0095be;
+  }
+  .header li a {
+    font-size: 12px;
+  }
+  .section-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1.18rem;
+  }
+  .item {
+    border-top: 2px solid #0095be;
+  }
+  .item {
+    border-radius: 0;
+  }
+  .item3 {
+    height: auto;
+  }
+  .item3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item6 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
