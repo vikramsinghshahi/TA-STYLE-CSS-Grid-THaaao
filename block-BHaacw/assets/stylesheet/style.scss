@@ -79,12 +79,12 @@ h1{
 
 .item3{
     padding: 0;
+    height:18vh;
     a{
         display: block;
         background-color: rgb(252,46,27);
         color: white;
         padding: 0.7rem;
-        margin-left: -0.5px;
     }
 }
 
@@ -180,6 +180,10 @@ h1{
         }
     }
 
+    .item3{
+        height: auto;
+    }
+
 }
 
 
@@ -192,7 +196,7 @@ h1{
 
 
 /* responsive designe for screen size 400px*/
-@media screen and (max-width:400px){
+@media screen and (max-width:360px){
     html{
         font-size: 10px;
     }
@@ -201,4 +205,47 @@ h1{
     .container{
         max-width: 320px;
     }
+
+    .header{
+        border-top: 2px solid rgb(0,149,190);
+        li a{
+            font-size: 12px;
+        }
+    
+    }
+     
+    .section-grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.18rem;
+    }
+
+    .item{
+        border-top: 2px solid rgb(0,149,190);
+    }
+
+   .item{
+       border-radius: 0;
+   }
+   
+   .item3{
+    height: auto;
+   }
+   
+   .item3{
+       order: 1;
+   }
+
+   .item5{
+       order: 1;
+   }
+
+   .item2{
+       order: 1;
+   }
+
+   .item6{
+       order:2;
+   }
+
 }
