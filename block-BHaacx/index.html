@@ -14,10 +14,12 @@
 <body>
     <!--header-section-->
     <header>
-            <div class="flex header">
+            <div class="flex header sm-header">
                 <h1>Stimulus</h1>
+                <label class="bars" for ="toggle"><i class="fas fa-bars"></i></label>
+                <input id="toggle" type="checkbox" name="checkbox">
                 <nav class="nav-bar">
-                    <ul class= "flex">
+                    <ul class= "flex sm-flex">
                         <li><a class="active" href="">HOME</a></li>
                         <li><a href="">ABOUT ME</a></li>
                         <li><a href="">EXPERIENCES</a></li>
@@ -192,7 +194,7 @@
                         <form>
                             <input class="form-control" type="text" name="name" placeholder="Your name">
                             <input class="form-control" type="text" name="email" placeholder="Your Email">
-                            <textarea class="form-subject" name="subject" placeholder="Write your message" style="height:200px"></textarea>
+                            <textarea class="form-subject" name="subject" placeholder="Write your message"></textarea>
     
                             <input class="btn" type="submit" value="send">
     
